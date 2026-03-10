@@ -1,0 +1,38 @@
+name: "competitor-monitoring-flow"
+display_name: "Competitor Monitoring Flow"
+description: "Ongoing competitor marketing surveillance, messaging analysis, and response planning"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/competitor-monitoring-flow"
+
+category: "marketing"
+tags:
+  - "competitive-intelligence"
+  - "competitor-analysis"
+  - "marketing-strategy"
+  - "market-monitoring"
+  - "messaging"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions:
+    - "network:web-search"
+  data_handling:
+    - "competitor-information"
+    - "market-data"
+
+contents:
+  skills: 2
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 2
+  total: 13
