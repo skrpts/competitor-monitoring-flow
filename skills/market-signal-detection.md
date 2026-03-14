@@ -5,7 +5,7 @@ title: Market Signal Detection
 description: "Identifies and interprets significant competitive signals from market activity, announcements, and behavioural changes"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: competitive-marketing-framework
     type: references

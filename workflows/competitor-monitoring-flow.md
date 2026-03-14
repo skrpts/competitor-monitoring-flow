@@ -19,7 +19,7 @@ connections:
     type: uses
   - target: monitoring-report-writer
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: competitive-marketing-framework
     type: references
@@ -97,3 +97,48 @@ Invoke the **monitoring-report-writer** prompt to compile all findings into a st
 | High (fast-moving market) | Weekly | Signal alerts + brief summary |
 | Medium (steady competition) | Fortnightly | Full monitoring report |
 | Low (stable market) | Monthly | Comprehensive report with trend analysis |
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.competitor_name}}` | Yes | Competitor name | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.website_url}}` | Yes | website URL | `https://example.com/reference` |
+| `{{input.known_social_media_profiles}}` | Yes | known social media profiles | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.any_previous_audit_data}}` | No | any previous audit data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Structured competitor profile covering all marketing channels, messaging themes, and current positioning | Structured competitor profile covering all marketing channels, messaging themes, and current positioning |
+| Messaging comparison matrix showing how each competitor positions themselves, their key differentiators, and messaging gaps or overlaps | Messaging comparison matrix showing how each competitor positions themselves, their key differentiators, and messaging gaps or overlaps |
+| Campaign analysis reports and market signal alerts for notable competitive moves | Campaign analysis reports and market signal alerts for notable competitive moves |
+| Threat assessment | Threat assessment with prioritised response recommendations |
+| Complete competitive monitoring report ready for distribution to stakeholders | Complete competitive monitoring report ready for distribution to stakeholders |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Competitor Name: "Paste the relevant brief, notes, source material, or dataset here."
+Website Url: "https://example.com/reference"
+Known Social Media Profiles: "Paste the relevant brief, notes, source material, or dataset here."
+Any Previous Audit Data: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
+```
+

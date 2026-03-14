@@ -5,7 +5,7 @@ title: Messaging Analysis
 description: "Deconstructs competitor messaging to identify positioning strategies, value propositions, and messaging patterns"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: competitive-marketing-framework
     type: references
