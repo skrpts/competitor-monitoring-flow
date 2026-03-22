@@ -40,7 +40,7 @@ This workflow establishes and executes an ongoing competitor monitoring programm
 
 **Input:** Competitor name, website URL, known social media profiles, any previous audit data
 
-Invoke the **competitor-audit-prompt** to produce a comprehensive baseline audit of each competitor's marketing presence. This covers their website messaging, content strategy, social media activity, advertising presence, and market positioning.
+Invoke the **competitor-audit-prompt** to produce a thorough baseline audit of each competitor's marketing presence. This covers their website messaging, content strategy, social media activity, advertising presence, and market positioning.
 
 **Output:** Structured competitor profile covering all marketing channels, messaging themes, and current positioning.
 
@@ -96,7 +96,7 @@ Invoke the **monitoring-report-writer** prompt to compile all findings into a st
 |----------------------|--------------------|--------------|
 | High (fast-moving market) | Weekly | Signal alerts + brief summary |
 | Medium (steady competition) | Fortnightly | Full monitoring report |
-| Low (stable market) | Monthly | Comprehensive report with trend analysis |
+| Low (stable market) | Monthly | Detailed report with trend analysis |
 
 ## Inputs
 
@@ -105,6 +105,9 @@ Invoke the **monitoring-report-writer** prompt to compile all findings into a st
 | `{{input.competitor_name}}` | Yes | Competitor name | `Paste the relevant brief, notes, source material, or dataset here.` |
 | `{{input.website_url}}` | Yes | website URL | `https://example.com/reference` |
 | `{{input.known_social_media_profiles}}` | Yes | known social media profiles | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.your_company}}` | Yes | Your company name | `Acme Corp` |
+| `{{input.market_segment}}` | Yes | Industry or market segment | `B2B SaaS project management` |
+| `{{input.your_positioning}}` | Yes | Your company's current positioning and messaging | `Paste a short summary of your current positioning statement and key messages.` |
 | `{{input.any_previous_audit_data}}` | No | any previous audit data | `Paste the latest metrics, exported data, or summary notes relevant to the workflow.` |
 
 ## Outputs
@@ -139,6 +142,9 @@ To test this workflow immediately after import:
 Competitor Name: "Paste the relevant brief, notes, source material, or dataset here."
 Website Url: "https://example.com/reference"
 Known Social Media Profiles: "Paste the relevant brief, notes, source material, or dataset here."
+Your Company: "Acme Corp"
+Market Segment: "B2B SaaS project management"
+Your Positioning: "Paste a short summary of your current positioning statement and key messages."
 Any Previous Audit Data: "Paste the latest metrics, exported data, or summary notes relevant to the workflow."
 ```
 

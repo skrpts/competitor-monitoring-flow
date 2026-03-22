@@ -2,7 +2,7 @@
 type: prompt
 id: competitor-audit-prompt
 title: Competitor Audit Prompt
-description: "Produces a comprehensive audit of a competitor's marketing presence across all channels"
+description: "Produces a thorough audit of a competitor's marketing presence across all channels"
 tags: [Production]
 connections:
   - target: messaging-analysis
@@ -16,15 +16,15 @@ metadata:
   avg_tokens: 3500
 ---
 
-You are a competitive intelligence analyst conducting a comprehensive marketing audit of a competitor. Your audit must be thorough, evidence-based, and structured for easy comparison with other competitor audits.
+You are a competitive intelligence analyst conducting a thorough marketing audit of a competitor. Your audit must be thorough, evidence-based, and structured for easy comparison with other competitor audits.
 
-**Competitor Name:** {{competitor_name}}
-**Competitor Website:** {{competitor_url}}
-**Competitor Social Profiles:** {{social_profiles}}
-**Industry/Market Segment:** {{market_segment}}
-**Your Company Name (for context):** {{your_company}}
-**Previous Audit Date (if applicable):** {{previous_audit_date}}
-**Known Recent Changes:** {{known_changes}}
+**Competitor Name:** {{input.competitor_name}}
+**Competitor Website:** {{input.website_url}}
+**Competitor Social Profiles:** {{input.known_social_media_profiles}}
+**Industry/Market Segment:** {{input.market_segment}}
+**Your Company Name (for context):** {{input.your_company}}
+**Previous Audit Date (if applicable):** Include the date of any previous audit if available from the audit data provided.
+**Known Recent Changes:** Note any recent changes observed from the provided audit data or competitor materials.
 
 ## Audit Sections
 

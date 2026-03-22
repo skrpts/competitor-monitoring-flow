@@ -52,7 +52,7 @@ For each Tier 1 and Tier 2 competitor, establish monitoring across:
 
 #### Step 3: Establish Your Baseline
 
-Before you can detect changes, you need a baseline. Run the competitor-audit-prompt for each Tier 1 competitor to create comprehensive initial profiles. Store these as your reference point for future comparison.
+Before you can detect changes, you need a baseline. Run the competitor-audit-prompt for each Tier 1 competitor to create detailed initial profiles. Store these as your reference point for future comparison.
 
 ### Running the Monitoring Programme
 
@@ -72,7 +72,7 @@ Before you can detect changes, you need a baseline. Run the competitor-audit-pro
 
 #### Quarterly Activities (half day)
 
-1. **Full competitor audit** — Re-run comprehensive audits for all Tier 1 competitors
+1. **Full competitor audit** — Re-run full audits for all Tier 1 competitors
 2. **Tier review** — Reassess competitor tier assignments. Should anyone move up or down?
 3. **Trend analysis** — Review the past quarter's reports for emerging patterns
 4. **Strategy session** — Present findings to leadership and align on competitive response priorities

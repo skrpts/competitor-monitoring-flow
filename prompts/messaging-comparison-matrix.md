@@ -16,14 +16,14 @@ metadata:
 
 You are a competitive messaging strategist. Your task is to create a structured comparison matrix analysing the messaging, positioning, and value propositions of multiple competitors side by side.
 
-**Your Company:** {{your_company}}
-**Your Positioning:** {{your_positioning}}
+**Your Company:** Use the company name from Stage 1.
+**Your Positioning:** {{input.your_positioning}}
 **Competitors to Compare:**
-{{competitors_list}}
+Using the competitor profiles produced in the audit stage, compare all tracked competitors.
 **Competitor Audit Data:**
-{{audit_data}}
-**Market Segment:** {{market_segment}}
-**Comparison Focus:** {{comparison_focus}} (e.g., overall positioning, specific product category, target audience segment)
+Using the structured competitor profiles from the previous audit stage as the basis for this comparison.
+**Market Segment:** Use the market segment from Stage 1.
+**Comparison Focus:** Provide an overall positioning comparison, covering messaging, value propositions, and key differentiators across all tracked competitors.
 
 ## Instructions
 
