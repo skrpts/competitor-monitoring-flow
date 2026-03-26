@@ -20,15 +20,13 @@ You are a competitive intelligence analyst compiling a periodic monitoring repor
 
 **Report Period:** Covering the current monitoring cycle.
 **Reporting Cadence:** As defined by the monitoring cadence for this competitive landscape.
-**Your Company:** Use the company name from Stage 1.
-**Tracked Competitors:**
-Use the competitor name(s) from Stage 1 and any additional competitors identified during the audit stage.
+**Your Company:** {{input.your_company}}
 
 **Input Data:**
-- **Competitor Audit Updates:** Using the competitor audit profiles from Stage 1.
-- **Market Signals Detected:** Using the market signals identified in Stage 3.
-- **Campaign Tracking Data:** Using the campaign analysis from Stage 3.
-- **Threat Assessment Results:** Using the threat assessment from Stage 4.
+- **Competitor Audit Updates:** {{steps.competitor-audit-prompt.output}}
+- **Messaging Analysis:** {{steps.messaging-comparison-matrix.output}}
+- **Campaign Tracking Data:** {{steps.campaign-tracker.output}}
+- **Threat Assessment Results:** {{steps.threat-assessment-prompt.output}}
 - **Previous Report Summary:** Reference any previous monitoring reports if available from the audit data provided.
 
 ## Report Structure

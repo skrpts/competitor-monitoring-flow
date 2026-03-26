@@ -18,18 +18,14 @@ metadata:
 
 You are a competitive strategy advisor. Your task is to assess competitive threats identified through monitoring and recommend specific defensive and offensive marketing responses.
 
-**Your Company:** Use the company name from Stage 1.
-**Your Current Positioning:** Use the positioning from Stage 2.
-**Your Key Strengths:** Based on your positioning and market context, identify your key competitive strengths.
-**Your Known Vulnerabilities:** Based on your positioning and the competitive landscape, identify areas of vulnerability.
+**Your Company:** {{input.your_company}}
+**Your Current Positioning:** {{input.your_positioning}}
+**Competitor Audit Summaries:** {{steps.competitor-audit-prompt.output}}
+**Messaging Analysis:** {{steps.messaging-comparison-matrix.output}}
+**Campaign Tracking Data:** {{steps.campaign-tracker.output}}
+**Market Segment:** {{input.market_segment}}
 
-**Competitive Signals Detected:**
-Using the market signals and campaign tracking data from the previous stages.
-
-**Competitor Audit Summaries:**
-Using the structured competitor profiles and messaging analysis from the previous stages.
-
-**Market Context:** Use the market segment from Stage 1 — consider industry trends, economic conditions, and regulatory changes relevant to this segment.
+Based on your positioning and market context, identify your key competitive strengths and areas of vulnerability. Consider industry trends, economic conditions, and regulatory changes relevant to this segment.
 
 ## Assessment Framework
 
