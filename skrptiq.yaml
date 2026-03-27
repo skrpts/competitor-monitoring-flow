@@ -19,10 +19,12 @@ tags:
   - "messaging"
 
 requires:
-  services: []
+  services:
+    - "llm-service"
   permissions:
     - "network:web-search"
   data_handling:
+    - "pii"
     - "competitor-information"
     - "market-data"
 
