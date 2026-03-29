@@ -3,7 +3,7 @@ type: skill
 id: audience-segmentation
 title: Audience Segmentation
 description: "Divides target markets into actionable segments based on behaviour and demographics"
-tags: [Tested, analysis:competitive, analysis:audience]
+tags: [Tested, Audience, Competitive]
 connections:
   - target: llm-service
     type: runs_on

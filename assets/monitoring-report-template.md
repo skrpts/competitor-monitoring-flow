@@ -3,7 +3,7 @@ type: asset
 id: monitoring-report-template
 title: Monitoring Report Template
 description: "Structured template for periodic competitive monitoring reports"
-tags: [Production, analysis:competitive, data:metrics]
+tags: [Production, Competitive, Metrics]
 connections: []
 metadata:
   asset_type: "template"

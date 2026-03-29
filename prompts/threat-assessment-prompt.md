@@ -3,7 +3,7 @@ type: prompt
 id: threat-assessment-prompt
 title: Threat Assessment Prompt
 description: "Assesses competitive threats and recommends defensive and offensive marketing responses"
-tags: [Production, analysis:competitive, data:metrics]
+tags: [Production, Competitive, Metrics]
 connections:
   - target: market-signal-detection
     type: derived_from

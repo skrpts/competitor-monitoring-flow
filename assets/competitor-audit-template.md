@@ -3,7 +3,7 @@ type: asset
 id: competitor-audit-template
 title: Competitor Audit Template
 description: "Structured template for documenting a thorough competitor marketing audit"
-tags: [Production, analysis:competitive, data:metrics]
+tags: [Production, Competitive, Metrics]
 connections: []
 metadata:
   asset_type: "template"

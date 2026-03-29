@@ -3,7 +3,7 @@ type: skill
 id: messaging-analysis
 title: Messaging Analysis
 description: "Deconstructs competitor messaging to identify positioning strategies, value propositions, and messaging patterns"
-tags: [Production, Tested, analysis:competitive, data:metrics]
+tags: [Production, Tested, Competitive, Metrics]
 connections:
   - target: llm-service
     type: runs_on

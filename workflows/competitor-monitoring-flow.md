@@ -3,7 +3,7 @@ type: workflow
 id: competitor-monitoring-flow
 title: Competitor Monitoring Flow
 description: "Ongoing competitor marketing surveillance, messaging analysis, and response planning"
-tags: [Production, Tested, analysis:competitive, data:metrics]
+tags: [Production, Tested, Competitive, Metrics]
 connections:
   - target: messaging-analysis
     type: uses

@@ -3,7 +3,7 @@ type: document
 id: competitor-monitoring-playbook
 title: Competitor Monitoring Playbook
 description: "Step-by-step guide to establishing and running an ongoing competitor monitoring programme"
-tags: [Production, Tested, analysis:competitive, data:metrics]
+tags: [Production, Tested, Competitive, Metrics]
 connections:
   - target: competitive-marketing-framework
     type: references

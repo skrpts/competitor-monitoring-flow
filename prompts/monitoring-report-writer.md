@@ -3,7 +3,7 @@ type: prompt
 id: monitoring-report-writer
 title: Monitoring Report Writer
 description: "Compiles a periodic competitive monitoring report from audit data, signal analysis, and threat assessments"
-tags: [Production, analysis:competitive, data:metrics]
+tags: [Production, Competitive, Metrics]
 connections:
   - target: messaging-analysis
     type: derived_from
