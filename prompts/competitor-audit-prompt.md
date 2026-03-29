@@ -3,7 +3,7 @@ type: prompt
 id: competitor-audit-prompt
 title: Competitor Audit Prompt
 description: "Produces a thorough audit of a competitor's marketing presence across all channels"
-tags: [Production]
+tags: [Production, analysis:competitive, data:metrics]
 connections:
   - target: messaging-analysis
     type: derived_from

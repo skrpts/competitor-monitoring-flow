@@ -3,7 +3,7 @@ type: source
 id: competitive-marketing-framework
 title: Competitive Marketing Framework
 description: "Structured framework for systematic competitive marketing analysis and monitoring"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:competitive, data:metrics]
 connections: []
 metadata:
   last_updated: "2026-03"

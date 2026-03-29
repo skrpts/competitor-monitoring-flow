@@ -3,7 +3,7 @@ type: skill
 id: market-signal-detection
 title: Market Signal Detection
 description: "Identifies and interprets significant competitive signals from market activity, announcements, and behavioural changes"
-tags: [Production, Tested]
+tags: [Production, Tested, analysis:competitive, data:metrics]
 connections:
   - target: llm-service
     type: runs_on

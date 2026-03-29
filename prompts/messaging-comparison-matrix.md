@@ -3,7 +3,7 @@ type: prompt
 id: messaging-comparison-matrix
 title: Messaging Comparison Matrix
 description: "Compares messaging, positioning, and value propositions across competitors in a structured matrix"
-tags: [Production]
+tags: [Production, analysis:competitive, data:metrics]
 connections:
   - target: messaging-analysis
     type: derived_from

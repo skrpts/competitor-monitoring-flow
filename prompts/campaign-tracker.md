@@ -3,7 +3,7 @@ type: prompt
 id: campaign-tracker
 title: Campaign Tracker
 description: "Analyses a competitor's recent campaigns and extracts marketing tactics, messaging, and strategic intent"
-tags: [Production]
+tags: [Production, analysis:competitive, planning:campaign]
 connections:
   - target: market-signal-detection
     type: derived_from
