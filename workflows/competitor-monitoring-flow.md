@@ -19,11 +19,15 @@ connections:
     type: uses
   - target: monitoring-report-writer
     type: uses
+  - target: audience-segmentation
+    type: uses
   - target: llm-service
     type: runs_on
   - target: competitive-marketing-framework
     type: references
   - target: competitor-monitoring-playbook
+    type: references
+  - target: brand-voice-guide
     type: references
 metadata:
   estimated_duration: "30-45 minutes"

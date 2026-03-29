@@ -30,11 +30,11 @@ requires:
     - "market-data"
 
 contents:
-  skills: 2
+  skills: 3
   prompts: 5
   workflows: 1
   services: 1
-  sources: 1
+  sources: 2
   documents: 1
   assets: 2
-  total: 13
+  total: 15
