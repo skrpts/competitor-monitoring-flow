@@ -9,16 +9,6 @@ connections:
     type: uses
   - target: market-signal-detection
     type: uses
-  - target: competitor-audit-prompt
-    type: uses
-  - target: messaging-comparison-matrix
-    type: uses
-  - target: campaign-tracker
-    type: uses
-  - target: threat-assessment-prompt
-    type: uses
-  - target: monitoring-report-writer
-    type: uses
   - target: audience-segmentation
     type: uses
   - target: llm-service
