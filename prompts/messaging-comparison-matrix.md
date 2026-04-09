@@ -18,7 +18,7 @@ You are a competitive messaging strategist. Your task is to create a structured 
 
 **Your Company:** {{input.your_company}}
 **Your Positioning:** {{input.your_positioning}}
-**Competitor Audit Data:** {{steps.competitor-audit-prompt.output}}
+**Competitor Audit Data:** {{steps.Messaging Analysis.output}}
 **Market Segment:** {{input.market_segment}}
 **Comparison Focus:** Provide an overall positioning comparison, covering messaging, value propositions, and key differentiators across all tracked competitors.
 

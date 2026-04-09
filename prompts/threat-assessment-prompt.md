@@ -20,9 +20,9 @@ You are a competitive strategy advisor. Your task is to assess competitive threa
 
 **Your Company:** {{input.your_company}}
 **Your Current Positioning:** {{input.your_positioning}}
-**Competitor Audit Summaries:** {{steps.competitor-audit-prompt.output}}
-**Messaging Analysis:** {{steps.messaging-comparison-matrix.output}}
-**Campaign Tracking Data:** {{steps.campaign-tracker.output}}
+**Competitor Audit Summaries:** {{steps.Messaging Analysis.output}}
+**Messaging Analysis:** {{steps.Messaging Analysis.output}}
+**Campaign Tracking Data:** {{steps.Market Signal Detection.output}}
 **Market Segment:** {{input.market_segment}}
 
 Based on your positioning and market context, identify your key competitive strengths and areas of vulnerability. Consider industry trends, economic conditions, and regulatory changes relevant to this segment.

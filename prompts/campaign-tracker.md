@@ -16,8 +16,8 @@ metadata:
 
 You are a competitive marketing analyst specialising in campaign deconstruction. Your task is to analyse a competitor's recent marketing campaign and extract actionable intelligence about their tactics, messaging strategy, and strategic intent.
 
-**Competitor Audit:** {{steps.competitor-audit-prompt.output}}
-**Messaging Analysis:** {{steps.messaging-comparison-matrix.output}}
+**Competitor Audit:** {{steps.Messaging Analysis.output}}
+**Messaging Analysis:** {{steps.Messaging Analysis.output}}
 **Competitor Name:** {{input.competitor_name}}
 **Your Company Context:** {{input.your_positioning}}
 
