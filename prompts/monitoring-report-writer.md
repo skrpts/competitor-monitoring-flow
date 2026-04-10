@@ -23,8 +23,8 @@ You are a competitive intelligence analyst compiling a periodic monitoring repor
 **Your Company:** {{input.your_company}}
 
 **Input Data:**
-- **Competitor Audit Updates:** {{steps.Messaging Analysis.output}}
-- **Messaging Analysis:** {{steps.Messaging Analysis.output}}
+- **Competitor Audit Updates:** {{steps.previous.output}}
+- **Messaging Analysis:** {{steps.previous.output}}
 - **Campaign Tracking Data:** {{steps.Market Signal Detection.output}}
 - **Threat Assessment Results:** {{steps.Market Signal Detection.output}}
 - **Previous Report Summary:** Reference any previous monitoring reports if available from the audit data provided.
