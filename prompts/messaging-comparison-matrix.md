@@ -4,6 +4,24 @@ id: messaging-comparison-matrix
 title: Messaging Comparison Matrix
 description: "Compares messaging, positioning, and value propositions across competitors in a structured matrix"
 tags: [Production, Competitive, Metrics]
+inputs:
+  your_company:
+    label: "Your Company"
+    description: "Your company name and brief description"
+    example: "Skrptiq — AI workflow platform"
+    required: true
+    type: text
+  your_positioning:
+    label: "Your Positioning"
+    description: "How your product is positioned in the market"
+    example: "The AI workflow builder for teams who need structured, repeatable AI processes"
+    required: true
+    type: text
+  market_segment:
+    label: "Market Segment"
+    description: "Market Segment"
+    required: true
+    type: text
 connections:
   - target: messaging-analysis
     type: derived_from

@@ -4,6 +4,36 @@ id: competitor-audit-prompt
 title: Competitor Audit Prompt
 description: "Produces a thorough audit of a competitor's marketing presence across all channels"
 tags: [Production, Competitive, Metrics]
+inputs:
+  competitor_name:
+    label: "Competitor Name"
+    description: "The name of the competitor to analyse"
+    example: "Notion"
+    required: true
+    type: text
+  website_url:
+    label: "Website URL"
+    description: "The website to analyse"
+    example: "https://hub.skrptiq.ai"
+    required: true
+    type: text
+  known_social_media_profiles:
+    label: "Social Media Profiles"
+    description: "Competitor social media profiles to monitor"
+    example: "@notion on Twitter, Notion on LinkedIn"
+    required: true
+    type: text
+  market_segment:
+    label: "Market Segment"
+    description: "Market Segment"
+    required: true
+    type: text
+  your_company:
+    label: "Your Company"
+    description: "Your company name and brief description"
+    example: "Skrptiq — AI workflow platform"
+    required: true
+    type: text
 connections:
   - target: messaging-analysis
     type: derived_from

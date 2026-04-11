@@ -4,6 +4,13 @@ id: monitoring-report-writer
 title: Monitoring Report Writer
 description: "Compiles a periodic competitive monitoring report from audit data, signal analysis, and threat assessments"
 tags: [Production, Competitive, Metrics]
+inputs:
+  your_company:
+    label: "Your Company"
+    description: "Your company name and brief description"
+    example: "Skrptiq — AI workflow platform"
+    required: true
+    type: text
 connections:
   - target: messaging-analysis
     type: derived_from

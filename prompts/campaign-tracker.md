@@ -4,6 +4,19 @@ id: campaign-tracker
 title: Campaign Tracker
 description: "Analyses a competitor's recent campaigns and extracts marketing tactics, messaging, and strategic intent"
 tags: [Production, Campaign, Competitive]
+inputs:
+  competitor_name:
+    label: "Competitor Name"
+    description: "The name of the competitor to analyse"
+    example: "Notion"
+    required: true
+    type: text
+  your_positioning:
+    label: "Your Positioning"
+    description: "How your product is positioned in the market"
+    example: "The AI workflow builder for teams who need structured, repeatable AI processes"
+    required: true
+    type: text
 connections:
   - target: market-signal-detection
     type: derived_from
