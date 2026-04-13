@@ -27,10 +27,8 @@ execution:
     step_type: "synthesis"
   - skill: "market-signal-detection"
     step_type: "synthesis"
-    input_from: "messaging-analysis"
   - skill: "audience-segmentation"
     step_type: "synthesis"
-    input_from: "market-signal-detection"
 ---
 
 ## Overview
