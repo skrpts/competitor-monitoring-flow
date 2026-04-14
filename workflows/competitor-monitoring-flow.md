@@ -22,6 +22,11 @@ connections:
 metadata:
   estimated_duration: "30-45 minutes"
   trigger: manual
+output_step: "audience-segmentation"
+composite_steps:
+  - "messaging-analysis"
+  - "market-signal-detection"
+  - "audience-segmentation"
 execution:
   - skill: "messaging-analysis"
     step_type: "synthesis"
