@@ -34,6 +34,8 @@ execution:
     step_type: "synthesis"
   - skill: "audience-segmentation"
     step_type: "synthesis"
+    context:
+      market_context: ""
 ---
 
 ## Overview
