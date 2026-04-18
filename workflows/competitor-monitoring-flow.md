@@ -11,6 +11,8 @@ connections:
     type: uses
   - target: audience-segmentation
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: competitive-marketing-framework
@@ -22,7 +24,7 @@ connections:
 metadata:
   estimated_duration: "30-45 minutes"
   trigger: manual
-output_step: "audience-segmentation"
+output_step: "language-polish"
 composite_steps:
   - "messaging-analysis"
   - "market-signal-detection"
@@ -30,8 +32,10 @@ composite_steps:
 execution:
   - skill: "messaging-analysis"
     step_type: "synthesis"
+    prompt: "competitor-audit-prompt"
   - skill: "market-signal-detection"
     step_type: "synthesis"
+    prompt: "campaign-tracker"
   - skill: "audience-segmentation"
     step_type: "synthesis"
     context:
@@ -121,7 +125,10 @@ Invoke the **monitoring-report-writer** prompt to compile all findings into a st
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+|------|----------
+  - skill: "language-polish"
+    step_type: "content"
+---|
 | Structured competitor profile covering all marketing channels, messaging themes, and current positioning | Structured competitor profile covering all marketing channels, messaging themes, and current positioning |
 | Messaging comparison matrix showing how each competitor positions themselves, their key differentiators, and messaging gaps or overlaps | Messaging comparison matrix showing how each competitor positions themselves, their key differentiators, and messaging gaps or overlaps |
 | Campaign analysis reports and market signal alerts for notable competitive moves | Campaign analysis reports and market signal alerts for notable competitive moves |
