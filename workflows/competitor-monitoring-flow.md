@@ -37,6 +37,7 @@ execution:
     step_type: "synthesis"
     prompt: "campaign-tracker"
   - skill: "audience-segmentation"
+    prompt: "segment-audience"
     step_type: "synthesis"
     context:
       market_context: ""
