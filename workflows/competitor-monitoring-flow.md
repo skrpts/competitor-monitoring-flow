@@ -41,6 +41,12 @@ execution:
     step_type: "synthesis"
     context:
       market_context: ""
+  - skill: "language-polish"
+    step_type: "content"
+    prompt: "polish-language"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
 ---
 
 ## Overview
@@ -126,10 +132,7 @@ Invoke the **monitoring-report-writer** prompt to compile all findings into a st
 ## Outputs
 
 | Name | Description |
-|------|----------
-  - skill: "language-polish"
-    step_type: "content"
----|
+|------|-------------|
 | Structured competitor profile covering all marketing channels, messaging themes, and current positioning | Structured competitor profile covering all marketing channels, messaging themes, and current positioning |
 | Messaging comparison matrix showing how each competitor positions themselves, their key differentiators, and messaging gaps or overlaps | Messaging comparison matrix showing how each competitor positions themselves, their key differentiators, and messaging gaps or overlaps |
 | Campaign analysis reports and market signal alerts for notable competitive moves | Campaign analysis reports and market signal alerts for notable competitive moves |
