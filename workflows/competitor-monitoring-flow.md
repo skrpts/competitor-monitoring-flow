@@ -33,17 +33,21 @@ execution:
   - skill: "messaging-analysis"
     step_type: "synthesis"
     prompt: "competitor-audit-prompt"
+    output: { name: "messaging_analysis", type: "text" }
   - skill: "market-signal-detection"
     step_type: "synthesis"
     prompt: "campaign-tracker"
+    output: { name: "market_signals", type: "text" }
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
+    output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
+    output: { name: "polished_report", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"

@@ -2,7 +2,7 @@ id: "9cc0febd-7087-4b2c-ab43-b85014095804"
 name: "competitor-monitoring-flow"
 display_name: "Competitor Monitoring Flow"
 description: "Ongoing competitor marketing surveillance, messaging analysis, and response planning"
-version: "1.1.24"
+version: "1.1.25"
 engine: ">=0.1.0"
 
 author:
@@ -64,3 +64,17 @@ contents:
   documents: 1
   assets: 2
   total: 12
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:00:01.880Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/competitor-monitoring-flow/security"
