@@ -55,7 +55,7 @@ execution:
 
 ## Overview
 
-This workflow establishes and executes an ongoing competitor monitoring programme. It moves from initial competitor auditing through messaging analysis, campaign tracking, threat assessment, and periodic reporting. Designed to run on a regular cadence (weekly, fortnightly, or monthly) to keep competitive intelligence current.
+This workflow establishes and executes an ongoing competitor monitoring program. It moves from initial competitor auditing through messaging analysis, campaign tracking, threat assessment, and periodic reporting. Designed to run on a regular cadence (weekly, fortnightly, or monthly) to keep competitive intelligence current.
 
 ## Pipeline Stages
 
@@ -81,7 +81,7 @@ Invoke the **messaging-analysis** skill to identify each competitor's core messa
 
 **Input:** Competitor marketing activity observed since last monitoring cycle, industry news, market developments
 
-Invoke the **market-signal-detection** skill to identify significant changes in the competitive landscape. Then run the **campaign-tracker** prompt to analyse specific campaigns or marketing initiatives observed from competitors.
+Invoke the **market-signal-detection** skill to identify significant changes in the competitive landscape. Then run the **campaign-tracker** prompt to analyze specific campaigns or marketing initiatives observed from competitors.
 
 **Output:** Campaign analysis reports and market signal alerts for notable competitive moves.
 
@@ -91,9 +91,9 @@ Invoke the **market-signal-detection** skill to identify significant changes in 
 
 **Input:** All outputs from Stages 1-3, your company's current market position and strategic priorities
 
-Invoke the **threat-assessment-prompt** to evaluate competitive threats and recommend defensive or offensive responses. This prioritises threats by severity and urgency.
+Invoke the **threat-assessment-prompt** to evaluate competitive threats and recommend defensive or offensive responses. This prioritizes threats by severity and urgency.
 
-**Output:** Threat assessment with prioritised response recommendations.
+**Output:** Threat assessment with prioritized response recommendations.
 
 **Gate:** Only escalate to executive stakeholders if a high-severity threat is identified. Medium and low threats feed into the standard monitoring report.
 
@@ -140,7 +140,7 @@ Invoke the **monitoring-report-writer** prompt to compile all findings into a st
 | Structured competitor profile covering all marketing channels, messaging themes, and current positioning | Structured competitor profile covering all marketing channels, messaging themes, and current positioning |
 | Messaging comparison matrix showing how each competitor positions themselves, their key differentiators, and messaging gaps or overlaps | Messaging comparison matrix showing how each competitor positions themselves, their key differentiators, and messaging gaps or overlaps |
 | Campaign analysis reports and market signal alerts for notable competitive moves | Campaign analysis reports and market signal alerts for notable competitive moves |
-| Threat assessment | Threat assessment with prioritised response recommendations |
+| Threat assessment | Threat assessment with prioritized response recommendations |
 | Complete competitive monitoring report ready for distribution to stakeholders | Complete competitive monitoring report ready for distribution to stakeholders |
 
 ## Setup
@@ -148,7 +148,7 @@ Invoke the **monitoring-report-writer** prompt to compile all findings into a st
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes

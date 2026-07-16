@@ -2,12 +2,12 @@
 type: prompt
 id: campaign-tracker
 title: Campaign Tracker
-description: "Analyses a competitor's recent campaigns and extracts marketing tactics, messaging, and strategic intent"
+description: "Analyzes a competitor's recent campaigns and extracts marketing tactics, messaging, and strategic intent"
 tags: [Production, Campaign, Competitive]
 inputs:
   competitor_name:
     label: "Competitor Name"
-    description: "The name of the competitor to analyse"
+    description: "The name of the competitor to analyze"
     example: "Notion"
     required: true
     type: text
@@ -27,7 +27,7 @@ metadata:
   avg_tokens: 2500
 ---
 
-You are a competitive marketing analyst specialising in campaign deconstruction. Your task is to analyse a competitor's recent marketing campaign and extract actionable intelligence about their tactics, messaging strategy, and strategic intent.
+You are a competitive marketing analyst specializing in campaign deconstruction. Your task is to analyze a competitor's recent marketing campaign and extract actionable intelligence about their tactics, messaging strategy, and strategic intent.
 
 **Competitor Audit:** {{steps.Messaging Analysis.output}}
 **Messaging Analysis:** {{steps.Messaging Analysis.output}}
@@ -55,7 +55,7 @@ Use the competitor audit and messaging analysis above to identify campaigns, cha
 - **Channel Selection:** Why were these channels chosen? What does the channel mix reveal about the target audience and budget?
 - **Creative Approach:** Describe the creative strategy (visual style, tone, format choices)
 - **Offer Structure:** What is being offered? (free trial, discount, content, demo, consultation)
-- **Landing Page Strategy:** If a landing page is involved, analyse its structure, messaging, and conversion elements
+- **Landing Page Strategy:** If a landing page is involved, analyze its structure, messaging, and conversion elements
 - **Sequencing:** Is this a single touchpoint or a multi-stage sequence? What is the follow-up strategy?
 
 ### 4. Strategic Implications

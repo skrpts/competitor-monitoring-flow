@@ -19,7 +19,7 @@ metadata:
 
 ## Executive Summary
 
-[3-5 sentences summarising the competitor's current marketing position, most notable recent activity, and key takeaway for our strategy]
+[3-5 sentences summarizing the competitor's current marketing position, most notable recent activity, and key takeaway for our strategy]
 
 **Overall Threat Level:** Low / Medium / High / Critical
 **Change Since Last Audit:** Stable / Strengthening / Weakening / Pivoting
@@ -49,7 +49,7 @@ metadata:
 - **Social Proof:** [logos, testimonials, metrics displayed]
 
 ### Product/Service Pages
-- **Key Features Emphasised:** [list]
+- **Key Features Emphasized:** [list]
 - **Messaging Angle:** [benefit-led / feature-led / problem-solution]
 
 ### Pricing

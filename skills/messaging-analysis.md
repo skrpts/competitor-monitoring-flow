@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Analyses competitor marketing messaging across all channels to identify their core positioning strategy, value propositions, messaging pillars, and communication patterns. Produces a structured breakdown that reveals what a competitor is saying, who they are saying it to, and how they differentiate themselves in the market.
+Analyzes competitor marketing messaging across all channels to identify their core positioning strategy, value propositions, messaging pillars, and communication patterns. Produces a structured breakdown that reveals what a competitor is saying, who they are saying it to, and how they differentiate themselves in the market.
 
 ## When to Use
 
@@ -28,20 +28,20 @@ Analyses competitor marketing messaging across all channels to identify their co
 
 ## Process
 
-1. **Message Extraction** — Collect and catalogue messaging from the competitor's website (homepage, about page, product pages, pricing page), social media profiles (bios, post themes, ad copy), email communications (if available), press releases, and blog content. Identify the phrases, claims, and language patterns used repeatedly.
+1. **Message Extraction** — Collect and catalog messaging from the competitor's website (homepage, about page, product pages, pricing page), social media profiles (bios, post themes, ad copy), email communications (if available), press releases, and blog content. Identify the phrases, claims, and language patterns used repeatedly.
 
 2. **Value Proposition Identification** — Distil the competitor's core value proposition: what they promise, to whom, and why the customer should choose them over alternatives. Look for explicit statements ("We help X do Y") and implicit positioning (pricing strategy, feature emphasis, customer testimonials they showcase).
 
-3. **Messaging Pillar Mapping** — Identify the 3-5 key messaging pillars the competitor returns to consistently. These are the themes that underpin their marketing — for example, "enterprise security", "ease of use", "AI-powered automation", "best-in-class support". Map which channels emphasise which pillars.
+3. **Messaging Pillar Mapping** — Identify the 3-5 key messaging pillars the competitor returns to consistently. These are the themes that underpin their marketing — for example, "enterprise security", "ease of use", "AI-powered automation", "best-in-class support". Map which channels emphasize which pillars.
 
-4. **Audience Targeting Analysis** — Determine who the competitor's messaging is aimed at. Analyse:
+4. **Audience Targeting Analysis** — Determine who the competitor's messaging is aimed at. Analyze:
    - Language complexity and jargon (technical vs. accessible)
    - Pain points addressed (what problems they claim to solve)
    - Aspirational messaging (what outcomes they promise)
    - Social proof selection (what types of customers they showcase)
    - Pricing language (value vs. premium vs. budget framing)
 
-5. **Tone and Brand Voice Assessment** — Characterise the competitor's communication style: formal vs. casual, authoritative vs. approachable, data-driven vs. emotional, urgent vs. considered. Note any inconsistencies across channels.
+5. **Tone and Brand Voice Assessment** — Characterize the competitor's communication style: formal vs. casual, authoritative vs. approachable, data-driven vs. emotional, urgent vs. considered. Note any inconsistencies across channels.
 
 6. **Differentiation Claim Analysis** — Identify how the competitor explicitly differentiates from alternatives. What claims do they make about being unique, better, or different? Evaluate whether these claims are substantiated or aspirational.
 
@@ -58,7 +58,7 @@ Analyses competitor marketing messaging across all channels to identify their co
 - Core value proposition statement (one sentence)
 - Messaging pillars (3-5 themes with evidence)
 - Target audience profile (inferred from messaging)
-- Brand voice characterisation
+- Brand voice characterization
 - Differentiation claims with substantiation assessment
 - Channel-specific messaging emphasis map
 - Messaging strengths and vulnerabilities

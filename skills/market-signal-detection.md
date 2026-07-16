@@ -2,7 +2,7 @@
 type: skill
 id: market-signal-detection
 title: Market Signal Detection
-description: "Identifies and interprets significant competitive signals from market activity, announcements, and behavioural changes"
+description: "Identifies and interprets significant competitive signals from market activity, announcements, and behavioral changes"
 tags: [Production, Tested, Competitive, Metrics]
 connections:
   - target: llm-service
@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Monitors and interprets market signals from competitors and the broader competitive landscape. Detects meaningful changes in competitor behaviour, market dynamics, and industry trends that could represent threats or opportunities. Distinguishes between noise and genuine strategic signals.
+Monitors and interprets market signals from competitors and the broader competitive landscape. Detects meaningful changes in competitor behavior, market dynamics, and industry trends that could represent threats or opportunities. Distinguishes between noise and genuine strategic signals.
 
 ## When to Use
 
@@ -38,7 +38,7 @@ Monitors and interprets market signals from competitors and the broader competit
    - Patent filings and research publications
    - Customer reviews and sentiment shifts
 
-2. **Signal Classification** — Categorise each signal by type:
+2. **Signal Classification** — Categorize each signal by type:
    - **Strategic:** Changes in company direction, market focus, or positioning
    - **Tactical:** Campaign launches, feature releases, pricing adjustments
    - **Operational:** Hiring patterns, office expansions, restructuring

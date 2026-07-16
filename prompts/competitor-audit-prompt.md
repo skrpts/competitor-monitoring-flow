@@ -7,13 +7,13 @@ tags: [Production, Competitive, Metrics]
 inputs:
   competitor_name:
     label: "Competitor Name"
-    description: "The name of the competitor to analyse"
+    description: "The name of the competitor to analyze"
     example: "Notion"
     required: true
     type: text
   website_url:
     label: "Website URL"
-    description: "The website to analyse"
+    description: "The website to analyze"
     example: "https://hub.skrptiq.ai"
     required: true
     type: text
@@ -65,18 +65,18 @@ Complete each section with specific observations and evidence. Do not speculate 
 - **Tagline/Strapline:** What is their current tagline?
 - **Positioning Statement:** How do they position themselves? (category, target audience, key differentiator)
 - **Brand Personality:** Describe their brand voice and personality in 3-5 adjectives with examples
-- **Visual Identity Notes:** Colour palette, imagery style, design maturity (professional/startup/enterprise)
+- **Visual Identity Notes:** Color palette, imagery style, design maturity (professional/startup/enterprise)
 
 ### 2. Website Analysis
 - **Homepage Messaging:** What is the first thing a visitor sees and reads? What is the primary CTA?
-- **Product/Service Pages:** How do they describe their offering? What features do they emphasise?
+- **Product/Service Pages:** How do they describe their offering? What features do they emphasize?
 - **Pricing Page:** Pricing model (freemium, tiered, enterprise, usage-based), price points if visible, pricing psychology tactics
 - **Social Proof:** Customer logos, testimonials, case studies, review scores, trust badges
 - **Content Hub:** Blog topics, publication frequency, content quality, SEO focus
 - **Conversion Paths:** How do they move visitors towards conversion? What CTAs are used?
 
 ### 3. Content & SEO Strategy
-- **Blog/Resource Centre:** Topics covered, publication frequency, content depth, target keywords
+- **Blog/Resource Center:** Topics covered, publication frequency, content depth, target keywords
 - **Gated Content:** Whitepapers, ebooks, webinars — what are they gating and what do they ask for?
 - **Video Content:** YouTube presence, video topics, production quality
 - **Podcast/Audio:** Any podcast presence or audio content?

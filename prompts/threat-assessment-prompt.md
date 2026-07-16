@@ -88,9 +88,9 @@ Identify opportunities to take initiative:
 - **Timing Windows:** Periods when the competitor is distracted or vulnerable (during a major launch, restructuring, etc.)
 - **Narrative Opportunities:** Stories we can tell that the competitor cannot (customer outcomes, technical depth, heritage)
 
-### 5. Prioritised Action Plan
+### 5. Prioritized Action Plan
 
-Produce a prioritised list of recommended actions:
+Produce a prioritized list of recommended actions:
 
 | Priority | Action | Type | Owner | Timeline | Expected Impact |
 |----------|--------|------|-------|----------|----------------|

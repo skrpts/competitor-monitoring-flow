@@ -2,7 +2,7 @@
 type: document
 id: competitor-monitoring-playbook
 title: Competitor Monitoring Playbook
-description: "Step-by-step guide to establishing and running an ongoing competitor monitoring programme"
+description: "Step-by-step guide to establishing and running an ongoing competitor monitoring program"
 tags: [Production, Tested, Competitive, Metrics]
 connections:
   - target: competitive-marketing-framework
@@ -14,13 +14,13 @@ metadata:
 
 ## Competitor Monitoring Playbook
 
-This playbook provides a practical guide to establishing and maintaining an ongoing competitor monitoring programme. It covers setup, execution, reporting, and continuous improvement.
+This playbook provides a practical guide to establishing and maintaining an ongoing competitor monitoring program. It covers setup, execution, reporting, and continuous improvement.
 
 ### Getting Started
 
 #### Step 1: Define Your Competitive Set
 
-Not every company in your space warrants monitoring. Categorise potential competitors into tiers:
+Not every company in your space warrants monitoring. Categorize potential competitors into tiers:
 
 **Tier 1 — Direct Competitors (Monitor Closely)**
 Companies that sell similar products to similar customers at similar price points. These are the competitors your sales team encounters in deals. Typically 3-5 companies.
@@ -46,7 +46,7 @@ For each Tier 1 and Tier 2 competitor, establish monitoring across:
 
 **Manual Monitoring (periodic):**
 - Website audits (monthly for Tier 1, quarterly for Tier 2)
-- Ad library checks (Meta Ad Library, Google Ads Transparency Centre)
+- Ad library checks (Meta Ad Library, Google Ads Transparency Center)
 - Conference and event attendance
 - Customer interviews and win/loss analysis for competitive deals
 
@@ -54,7 +54,7 @@ For each Tier 1 and Tier 2 competitor, establish monitoring across:
 
 Before you can detect changes, you need a baseline. Run the competitor-audit-prompt for each Tier 1 competitor to create detailed initial profiles. Store these as your reference point for future comparison.
 
-### Running the Monitoring Programme
+### Running the Monitoring Program
 
 #### Weekly Activities (30-45 minutes)
 
@@ -65,7 +65,7 @@ Before you can detect changes, you need a baseline. Run the competitor-audit-pro
 #### Fortnightly/Monthly Activities (2-3 hours)
 
 1. **Messaging check** — Review Tier 1 competitor websites for messaging changes
-2. **Campaign tracking** — Analyse any new campaigns using the campaign-tracker prompt
+2. **Campaign tracking** — Analyze any new campaigns using the campaign-tracker prompt
 3. **Comparison update** — Update the messaging-comparison-matrix if significant changes occurred
 4. **Report compilation** — Run the monitoring-report-writer prompt to produce the periodic report
 5. **Distribution** — Share the report with marketing leadership, sales, and product teams
@@ -76,7 +76,7 @@ Before you can detect changes, you need a baseline. Run the competitor-audit-pro
 2. **Tier review** — Reassess competitor tier assignments. Should anyone move up or down?
 3. **Trend analysis** — Review the past quarter's reports for emerging patterns
 4. **Strategy session** — Present findings to leadership and align on competitive response priorities
-5. **Programme review** — Is the monitoring cadence appropriate? Are we tracking the right competitors?
+5. **Program review** — Is the monitoring cadence appropriate? Are we tracking the right competitors?
 
 ### Making Intelligence Actionable
 

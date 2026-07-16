@@ -58,7 +58,7 @@ For each tracked competitor, provide a brief update:
 
 ### 3. Market Signals & Trends
 
-Summarise the most significant market signals detected:
+Summarize the most significant market signals detected:
 - **Signal 1:** [description, source, assessed significance]
 - **Signal 2:** [description, source, assessed significance]
 - **Signal 3:** [description, source, assessed significance]
@@ -75,7 +75,7 @@ Update the running threat and opportunity register:
 
 ### 5. Recommended Actions
 
-Prioritised list of actions for the coming period:
+Prioritized list of actions for the coming period:
 1. **[Action]** — [brief rationale, owner, deadline]
 2. **[Action]** — [brief rationale, owner, deadline]
 3. **[Action]** — [brief rationale, owner, deadline]
@@ -103,4 +103,4 @@ Include any quantitative competitive metrics:
 
 ## Output Format
 
-Use the monitoring-report-template structure. Keep the total report concise — aim for 2-4 pages. Prioritise signal over noise. Every finding should connect to a recommended action or monitoring adjustment. Use British English throughout.
+Use the monitoring-report-template structure. Keep the total report concise — aim for 2-4 pages. Prioritize signal over noise. Every finding should connect to a recommended action or monitoring adjustment. Use British English throughout.

@@ -66,7 +66,7 @@ Where and how a competitor reaches their audience.
 
 #### Pillar 4: Campaign Execution
 
-How a competitor brings marketing programmes to market.
+How a competitor brings marketing programs to market.
 
 **Analysis Dimensions:**
 - **Campaign Themes:** What narratives are they building?
