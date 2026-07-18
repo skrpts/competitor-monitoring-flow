@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.27
+GH#863 Wave 1 — fix the K-045 intent/output mismatch: the bundle shipped the `messaging-comparison-matrix`, `threat-assessment-prompt`, and `monitoring-report-writer` prompts (the monitoring report being the real deliverable) and the docs said to run them, but the `execution:` block never invoked any of them — so the periodic report was never produced. Restored the intended bound graph: added **Messaging Comparison Matrix**, **Threat Assessment**, and **Monitoring Report Writer** execution steps (each with a backing skill so it is `from_step`-addressable), ordered `messaging-analysis → messaging-comparison → market-signal-detection → threat-assessment → audience-segmentation → monitoring-report`, and rewired every cross-step input to an explicit `from_step` binding (`{{step.context.*}}`) instead of positional `{{steps.previous.output}}` / `{{steps.<Title>.output}}` refs. The monitoring report is now the last content step and receives the messaging matrix, threat assessment, and market signals. Also repinned `polish-language` 1.0.1→1.0.6 (the version exposing the bindable `source` slot) and bound `language-polish`'s `source` ← the Monitoring Report Writer output, so the `output_step` polishes the actual report rather than its positional previous. No new required inputs.
+
 ## v1.1.26
 GH#845 — republish with American English (en-US) content, completing the source-only GH#805 flip that never reached the Hub. Copy only — no functional or behaviour change.
 

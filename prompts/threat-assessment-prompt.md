@@ -23,6 +23,16 @@ inputs:
     example: "B2B SaaS for mid-market HR teams (50-500 employees)"
     required: true
     type: text
+context_params:
+  messaging_analysis:
+    label: "Messaging Analysis"
+    description: "The messaging analysis and competitor audit summaries — evidence for the threat assessment."
+    required: false
+  campaign_tracking:
+    label: "Campaign Tracking Data"
+    description: "The market signal and campaign tracking data — evidence for the threat assessment."
+    required: false
+    default_from_previous: true
 connections:
   - target: market-signal-detection
     type: derived_from
@@ -39,9 +49,9 @@ You are a competitive strategy advisor. Your task is to assess competitive threa
 
 **Your Company:** {{input.your_company}}
 **Your Current Positioning:** {{input.your_positioning}}
-**Competitor Audit Summaries:** {{steps.Messaging Analysis.output}}
-**Messaging Analysis:** {{steps.Messaging Analysis.output}}
-**Campaign Tracking Data:** {{steps.previous.output}}
+**Competitor Audit Summaries:** {{step.context.messaging_analysis}}
+**Messaging Analysis:** {{step.context.messaging_analysis}}
+**Campaign Tracking Data:** {{step.context.campaign_tracking}}
 **Market Segment:** {{input.market_segment}}
 
 Based on your positioning and market context, identify your key competitive strengths and areas of vulnerability. Consider industry trends, economic conditions, and regulatory changes relevant to this segment.

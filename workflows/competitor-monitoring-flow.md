@@ -7,9 +7,15 @@ tags: [Production, Tested, Competitive, Metrics]
 connections:
   - target: messaging-analysis
     type: uses
+  - target: messaging-comparison
+    type: uses
   - target: market-signal-detection
     type: uses
+  - target: threat-assessment
+    type: uses
   - target: audience-segmentation
+    type: uses
+  - target: monitoring-report
     type: uses
   - target: language-polish
     type: uses
@@ -27,23 +33,59 @@ metadata:
 output_step: "language-polish"
 composite_steps:
   - "messaging-analysis"
+  - "messaging-comparison"
   - "market-signal-detection"
+  - "threat-assessment"
   - "audience-segmentation"
+  - "monitoring-report"
 execution:
   - skill: "messaging-analysis"
     step_type: "synthesis"
     prompt: "competitor-audit-prompt"
     output: { name: "messaging_analysis", type: "text" }
+  - skill: "messaging-comparison"
+    step_type: "synthesis"
+    prompt: "messaging-comparison-matrix"
+    output: { name: "messaging_matrix", type: "text" }
+    bindings:
+      competitor_audit:
+        from_step: "Messaging Analysis"
+        field: output
   - skill: "market-signal-detection"
     step_type: "synthesis"
     prompt: "campaign-tracker"
     output: { name: "market_signals", type: "text" }
+  - skill: "threat-assessment"
+    step_type: "synthesis"
+    prompt: "threat-assessment-prompt"
+    output: { name: "threat_assessment", type: "text" }
+    bindings:
+      messaging_analysis:
+        from_step: "Messaging Analysis"
+        field: output
+      campaign_tracking:
+        from_step: "Market Signal Detection"
+        field: output
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
     output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
+  - skill: "monitoring-report"
+    step_type: "synthesis"
+    prompt: "monitoring-report-writer"
+    output: { name: "monitoring_report", type: "text" }
+    bindings:
+      messaging_matrix:
+        from_step: "Messaging Comparison Matrix"
+        field: output
+      market_signals:
+        from_step: "Market Signal Detection"
+        field: output
+      threat_assessment:
+        from_step: "Threat Assessment"
+        field: output
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
@@ -51,6 +93,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Monitoring Report Writer"
+        field: output
 ---
 
 ## Overview

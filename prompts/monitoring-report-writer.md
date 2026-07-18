@@ -11,6 +11,19 @@ inputs:
     example: "Skrptiq — AI workflow platform"
     required: true
     type: text
+context_params:
+  messaging_matrix:
+    label: "Messaging Comparison Matrix"
+    description: "The messaging comparison matrix — audit and messaging findings for the report."
+    required: false
+  market_signals:
+    label: "Market Signals"
+    description: "The market signal and campaign tracking data for the report."
+    required: false
+  threat_assessment:
+    label: "Threat Assessment"
+    description: "The threat assessment and prioritised response recommendations for the report."
+    required: false
 connections:
   - target: messaging-analysis
     type: derived_from
@@ -30,10 +43,10 @@ You are a competitive intelligence analyst compiling a periodic monitoring repor
 **Your Company:** {{input.your_company}}
 
 **Input Data:**
-- **Competitor Audit Updates:** {{steps.previous.output}}
-- **Messaging Analysis:** {{steps.previous.output}}
-- **Campaign Tracking Data:** {{steps.Market Signal Detection.output}}
-- **Threat Assessment Results:** {{steps.Market Signal Detection.output}}
+- **Competitor Audit Updates:** {{step.context.messaging_matrix}}
+- **Messaging Analysis:** {{step.context.messaging_matrix}}
+- **Campaign Tracking Data:** {{step.context.market_signals}}
+- **Threat Assessment Results:** {{step.context.threat_assessment}}
 - **Previous Report Summary:** Reference any previous monitoring reports if available from the audit data provided.
 
 ## Report Structure

@@ -23,6 +23,12 @@ inputs:
     example: "B2B SaaS for mid-market HR teams (50-500 employees)"
     required: true
     type: text
+context_params:
+  competitor_audit:
+    label: "Competitor Audit"
+    description: "The competitor audit and messaging analysis — the evidence base for the comparison."
+    required: false
+    default_from_previous: true
 connections:
   - target: messaging-analysis
     type: derived_from
@@ -37,7 +43,7 @@ You are a competitive messaging strategist. Your task is to create a structured 
 
 **Your Company:** {{input.your_company}}
 **Your Positioning:** {{input.your_positioning}}
-**Competitor Audit Data:** {{steps.previous.output}}
+**Competitor Audit Data:** {{step.context.competitor_audit}}
 **Market Segment:** {{input.market_segment}}
 **Comparison Focus:** Provide an overall positioning comparison, covering messaging, value propositions, and key differentiators across all tracked competitors.
 
