@@ -72,6 +72,10 @@ execution:
     output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
+    bindings:
+      source:
+        from_step: "Threat Assessment"
+        field: output
   - skill: "monitoring-report"
     step_type: "synthesis"
     prompt: "monitoring-report-writer"

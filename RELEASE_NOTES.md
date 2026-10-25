@@ -1,5 +1,18 @@
 # Release Notes
 
+## v1.1.28
+GH#1100 consumer wave (batch 3) — declare the data flow this workflow was resolving positionally.
+
+Each stage below now receives its input through a declared `bindings:` entry instead of `default_from_previous`, which K-073 revoked. **The value is unchanged**: every binding names the step that immediately precedes it, which is exactly what the positional default resolved to. What changes is that the dependency is stated rather than inferred from position, so a reorder can no longer silently feed a stage the wrong artefact.
+
+Bindings added:
+  `segment-audience` ← `from_step: "Threat Assessment"` (step 5)
+
+Dependency pins moved to the published versions that declare these slots:
+  `audience-segmentation` 1.0.1 → 1.0.2
+  `polish-language` 1.0.6 → 1.0.7
+  `segment-audience` 1.0.5 → 1.0.6
+
 ## v1.1.27
 GH#863 Wave 1 — fix the K-045 intent/output mismatch: the bundle shipped the `messaging-comparison-matrix`, `threat-assessment-prompt`, and `monitoring-report-writer` prompts (the monitoring report being the real deliverable) and the docs said to run them, but the `execution:` block never invoked any of them — so the periodic report was never produced. Restored the intended bound graph: added **Messaging Comparison Matrix**, **Threat Assessment**, and **Monitoring Report Writer** execution steps (each with a backing skill so it is `from_step`-addressable), ordered `messaging-analysis → messaging-comparison → market-signal-detection → threat-assessment → audience-segmentation → monitoring-report`, and rewired every cross-step input to an explicit `from_step` binding (`{{step.context.*}}`) instead of positional `{{steps.previous.output}}` / `{{steps.<Title>.output}}` refs. The monitoring report is now the last content step and receives the messaging matrix, threat assessment, and market signals. Also repinned `polish-language` 1.0.1→1.0.6 (the version exposing the bindable `source` slot) and bound `language-polish`'s `source` ← the Monitoring Report Writer output, so the `output_step` polishes the actual report rather than its positional previous. No new required inputs.
 
