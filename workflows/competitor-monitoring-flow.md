@@ -27,6 +27,13 @@ connections:
     type: references
   - target: brand-voice-guide
     type: references
+inputs:
+  product_or_campaign:
+    label: "Product or Campaign"
+    description: "The product or campaign the audience is being segmented for"
+    example: "Our developer-tools suite, positioned against incumbent CI vendors"
+    required: true
+    type: text
 metadata:
   estimated_duration: "30-45 minutes"
   trigger: manual
@@ -74,8 +81,7 @@ execution:
       market_context: "No additional market context"
     bindings:
       source:
-        from_step: "Threat Assessment"
-        field: output
+        from_input: "product_or_campaign"
   - skill: "monitoring-report"
     step_type: "synthesis"
     prompt: "monitoring-report-writer"

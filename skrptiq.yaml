@@ -2,7 +2,7 @@ id: "9cc0febd-7087-4b2c-ab43-b85014095804"
 name: "competitor-monitoring-flow"
 display_name: "Competitor Monitoring Flow"
 description: "Ongoing competitor marketing surveillance, messaging analysis, and response planning"
-version: "1.1.28"
+version: "1.1.29"
 engine: ">=0.1.0"
 
 author:
@@ -67,7 +67,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-10-25T21:53:47.208Z"
+  scanned_at: "2026-10-29T19:13:57.919Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

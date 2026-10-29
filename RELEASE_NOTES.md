@@ -1,5 +1,14 @@
 # Release Notes
 
+## v1.1.29
+GH#1100 retrospective repair — `from_step` where `from_input` was needed.
+
+`segment-audience`'s slot is labelled **"Product or Campaign"** and was bound to Threat Assessment, so the audience segmentation was performed against a threat assessment rather than a product. No step in a competitor-monitoring flow produces a product description, so no binding to any step could have been correct. A new required `product_or_campaign` input now carries it.
+
+**This flow now requires an input it did not require before.** Previously the user supplied nothing and the segmentation ran against a threat assessment. The old behaviour was not "fewer inputs" — it was the wrong value, silently.
+
+This is the third consumer of `segment-audience` to have guessed at this slot, and the three guesses differed. The slot cannot declare that it takes a workflow input rather than a step output, which is the defect behind all three.
+
 ## v1.1.28
 GH#1100 consumer wave (batch 3) — declare the data flow this workflow was resolving positionally.
 
