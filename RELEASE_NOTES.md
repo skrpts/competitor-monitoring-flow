@@ -1,5 +1,12 @@
 # Release Notes
 
+## v1.1.30
+GH#1143 — remove 2 `default_from_previous` declarations. K-073 revoked the key, and the consumer wave has since bound every slot that carried it, so the fallback can no longer fire: the declaration was inert.
+
+Measured before deleting rather than after: each of the 41 slots across the catalogue was resolved against **every** invocation, not just its carrier's own workflow, and all 41 were bound by every consumer. Nothing here changes behaviour — the fallback had no path to execution.
+
+Removed: `messaging-comparison-matrix.competitor_audit`, `threat-assessment-prompt.campaign_tracking`.
+
 ## v1.1.29
 GH#1100 retrospective repair — `from_step` where `from_input` was needed.
 

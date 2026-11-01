@@ -28,7 +28,6 @@ context_params:
     label: "Competitor Audit"
     description: "The competitor audit and messaging analysis — the evidence base for the comparison."
     required: false
-    default_from_previous: true
 connections:
   - target: messaging-analysis
     type: derived_from

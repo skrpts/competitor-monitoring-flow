@@ -32,7 +32,6 @@ context_params:
     label: "Campaign Tracking Data"
     description: "The market signal and campaign tracking data — evidence for the threat assessment."
     required: false
-    default_from_previous: true
 connections:
   - target: market-signal-detection
     type: derived_from
