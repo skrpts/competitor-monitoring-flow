@@ -2,7 +2,7 @@ id: "9cc0febd-7087-4b2c-ab43-b85014095804"
 name: "competitor-monitoring-flow"
 display_name: "Competitor Monitoring Flow"
 description: "Ongoing competitor marketing surveillance, messaging analysis, and response planning"
-version: "1.1.30"
+version: "1.1.31"
 engine: ">=0.1.0"
 
 author:
@@ -22,8 +22,8 @@ tags:
 dependencies:
   - id: "977ca840-8322-4df1-bc13-98d43b3e41a8"
     name: "audience-segmentation"
-    version: 1.0.2
-    checksum: "sha256:913727caeec5a262ab4213fe98b04f2506620f895d877f41637cb0cdf40bb87b"
+    version: 1.0.3
+    checksum: "sha256:a14d9ff15fc8d87993289a170824138377ac553e56258398149cfd9cb0893ba7"
   - id: "89a5666b-057e-4acc-9c1b-15858bd832dd"
     name: "brand-voice-guide"
     version: 1.0.3
@@ -67,7 +67,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-11-01T19:24:10.201Z"
+  scanned_at: "2026-11-08T15:20:41.375Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"
